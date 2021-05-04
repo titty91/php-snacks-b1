@@ -33,8 +33,11 @@
       ],
     ];
 
-    echo $basket;
-    var_dump($basket);
+    for($i=0; $i < count($basket); $i++){
+      $math = $basket[$i];
+      echo $math['home'] . '-' . $math['Opposing'] . '|' . $math['pointsHome'] . ' - ' . $math['pointsOpp'];
+      echo '<br>';
+    }
 
     /* Snack 2Passare come parametri GET name, mail e age e verificare (cercando i metodi che
     non conosciamo nella documentazione) che name sia più lungo di 3 caratteri,
