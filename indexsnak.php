@@ -54,10 +54,20 @@
     // echo '<br>';
     // echo $age;
 
-    if(strpos($wordMail, '@')== true){
-      echo $wordMail . 'mail corretta';
-    }
+    $nameOk = strlen($wordName) > 3;
+    // var_dump($nameOk);
 
+    $mailOk = (strpos($wordMail, '.') != false) && (strpos($wordMail, '@') !=false);
+    // var_dump($mailOk);
+
+    $ageOk = is_numeric($age); //is_int(verifica se il numero è un intero)
+    // var_dump($ageOk);
+
+    if($nameOk==true && $mailOk==true && $ageOk==true){
+      echo "Accesso riuscito";
+    }else{
+      echo "Accesso negato";
+    }
     ?>
   </body>
 </html>
