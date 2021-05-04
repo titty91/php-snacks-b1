@@ -35,7 +35,7 @@
 
     for($i=0; $i < count($basket); $i++){
       $math = $basket[$i];
-      echo $math['home'] . '-' . $math['Opposing'] . '|' . $math['pointsHome'] . ' - ' . $math['pointsOpp'];
+      echo $math['home'] . ' - ' . $math['Opposing'] . ' | ' . $math['pointsHome'] . ' - ' . $math['pointsOpp'];
       echo '<br>';
     }
 
@@ -44,6 +44,20 @@
     che mail contenga un punto e una chiocciola e che age sia un numero.
     Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
     */
+
+    // $wordName = $_GET['name'];
+    $wordMail = $_GET['mail'];
+    // $age = $_GET['age'];
+    // echo $wordName;
+    // echo '<br>';
+    // echo $wordMail;
+    // echo '<br>';
+    // echo $age;
+
+    if(strpos($wordMail, '@')== true){
+      echo $wordMail . 'mail corretta';
+    }
+
     ?>
   </body>
 </html>
