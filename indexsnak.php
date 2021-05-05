@@ -45,9 +45,9 @@
     Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
     */
 
-    // $wordName = $_GET['name'];
+    $wordName = $_GET['name'];
     $wordMail = $_GET['mail'];
-    // $age = $_GET['age'];
+    $age = $_GET['age'];
     // echo $wordName;
     // echo '<br>';
     // echo $wordMail;
